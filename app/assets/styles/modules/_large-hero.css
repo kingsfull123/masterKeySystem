@@ -1,0 +1,27 @@
+.large-hero {
+
+    &__title {
+        color: $mainBlue;
+
+        @mixin atSmall {
+            color: red;
+        }
+
+        @mixin atMedium {
+            color: yellow;
+        }
+
+        @mixin atLarge {
+            color: purple;
+        }
+    }
+
+    &__subtitle {
+        color: $mainOrange;
+    }
+
+   &__img {
+       background-size: cover;
+   }
+   
+}
