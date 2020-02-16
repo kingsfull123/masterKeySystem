@@ -7,26 +7,39 @@
     <title>testing</title>
 </head>
 <body>
-
-    <!-- <header class='large-header'>
-        <img src="./assets/img/icons/clear-view-escapes.svg" alt="icon">
-        <div class="large-header__container">
-            <button class="btn btn--orange btn--large">Find out more</button>
-            <ul>
-                <li><a href="#">Plans</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Locations</a></li>
-            </ul>
-        </div>
-    </header> -->
+   <div class="site-header">
+       <div class="wrapper">
+            <div class="site-header__logo">
+                <img src="./assets/img/icons/clear-view-escapes.svg" alt="logo">
+            </div>
+            <div class="site-header__btn">
+                <a href="#" class="site-header__btn btn btn--orange btn--large">find our more</a>
+            </div>
+            <div class="site-header__block"></div>
+            <div class="site-header__listing">
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Products</a></li>
+                  </ul>
+            </div>
+       </div>
+   </div>
 
     <div class="large-hero">
-        <img src="./assets/img/hero--large.jpg" alt="img">
-        <div class="large-hero__text-content">
-            <h1 class="large-hero__title">Your Clarity.</h1>
-            <h2 class="large-hero__subtitle">One Trip Away</h2>
-            <p class="large-hero__description">We create soul restoring journey that inspire you to be you.</p>
-            <p><a href="#" class="btn btn--orange btn--large">Find our more</a></p>
+        <picture>
+            <source srcset='./assets/img/hero--large.jpg' media='(min-width: 1350px)'>
+            <source srcset='./assets/img/hero--medium.jpg' media='(min-width: 990px)'>
+            <source srcset='./assets/img/hero--small.jpg' media='(min-width: 640px)'>
+            <img src="./assets/img/hero--smaller.jpg" alt="img">
+        </picture>
+        <div class="large-hero__container">
+            <div class="wrapper">
+                <h1 class="large-hero__title">Your Clarity.</h1>
+                <h4 class="large-hero__subtitle">One trip away</h4>
+                <p class="large-hero__description">We create soul restoring journeys that inspire you to be you.</p>
+                <p><a href="" class="btn btn--orange">Find out more</a></p>
+            </div>
         </div>
     </div>
 

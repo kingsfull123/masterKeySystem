@@ -3,6 +3,7 @@
     border: none;
     border-radius: 5px;
     color: #FFF;
+    text-decoration: none;
     
     &--large {
         padding: 10px 20px;
