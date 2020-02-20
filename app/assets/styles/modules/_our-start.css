@@ -1,0 +1,39 @@
+.our-start {
+
+    &__title {
+        color: $mainBlue;
+        font-size: 2.678rem;
+        font-weight: 200;
+    }
+
+    &__subtitle {
+        color: $mainOrange;
+        font-weight: 200;
+        font-size: 1.55rem;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 1rem;
+    }
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__padding-bottom-till-medium {
+        padding-bottom: 0;
+
+        @mixin atMedium {
+            padding-bottom: 3.25rem;
+        }
+    }
+
+    &--center {
+        text-align: center;
+    }
+
+   strong {
+       font-weight: 600;
+   }
+}
