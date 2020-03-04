@@ -1,14 +1,17 @@
 import '../styles/styles.css';
 
 
-function Person(name, number) {
-    this.firstName = name;
-    this.favNumber = number;
+const block = document.getElementById('block');
 
-    this.greet = function() {
-        console.log('this is ' + this.firstName , 'my number is ' + this.favNumber)
+const listing = document.getElementById('listing');
+
+let isToggled = false;
+
+block.onclick = function() {
+    isToggled = !isToggled;
+    if(isToggled) {
+        listing.classList.remove('site-header__display')
+    } else {
+        listing.classList.add('site-header__display')
     }
 }
-
-const luke = new Person('luck', '15');
-luke.greet()

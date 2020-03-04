@@ -1,33 +1,62 @@
 .row {
     @mixin clearfix;
+    position: relative;
 
-    &--gutters > div {
-        padding-right: 0;
-
-        @mixin atMedium {
-            padding-right: 65px;
-        }
-        
+    
+    &__gutters {
+        margin-right: -65px;
     }
 
-    &__4 {
-        width: 100%;
+    &__gutters--large {
+        margin-right: -100px;
+    }
 
-        @mixin atMedium {
+    &__gutters > div {
+        padding-right: 65px;
+    }
+
+    &__gutters--large > div {
+        padding-right: 100px;
+    }
+
+    &__b-margin-until-medium {
+        margin-bottom: 2rem;
+    }
+
+    @mixin atMedium {
+
+        &__b-margin-until-medium {
+            margin-bottom: 0;
+        }
+    
+        &__medium-4 {
+            float: left;
             width: 33.33%;
-            float: left;
         }
-        
-    }
 
-    &__8 {
-        width: 100%;
+        &__medium-4--larger {
+            width: 37%;
+        }
 
-        @mixin atMedium {
+        &__medium-6 {
+            float: left;
+            width: 50%;
+        }
+      
+        &__medium-8 {
+            float: left;
             width: 66.66%;
-            float: left;
         }
-        
+
+        &__medium-8--smaller {
+            width: 63%;
+        }
     }
+
+    &--testimonials {
+        position: relative;
+        top: 50px;
+    }
+
 }
 

@@ -1,10 +1,10 @@
 .btn {
-    padding: 5px 7px;
+    padding: 5px 10px;
     border: none;
     border-radius: 5px;
     color: #FFF;
     text-decoration: none;
-    
+
     &--large {
         padding: 10px 20px;
         font-size: 1.2rem;
@@ -13,4 +13,5 @@
     &--orange {
         background-color: orange;
     }
+
 }

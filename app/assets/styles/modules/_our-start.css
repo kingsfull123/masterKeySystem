@@ -2,26 +2,40 @@
 
     &__title {
         color: $mainBlue;
-        font-size: 2.678rem;
+        font-size: 1.1rem;
         font-weight: 200;
+
+        @mixin atSmall {
+            font-size: 2.678rem;
+        }
     }
 
     &__subtitle {
         color: $mainOrange;
         font-weight: 200;
-        font-size: 1.55rem;
-        max-width: 450px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 1rem;
-    }
-
-    &__img {
-        display: block;
+        font-size: 1rem;
+        max-width: 300px;
+        text-align: center;
         margin: 0 auto;
+        padding-bottom: 1rem;
+
+        @mixin atSmall {
+            font-size: 1.55rem;
+            max-width: 450px;
+            padding-bottom: 2rem;
+        }
     }
 
-    &__padding-bottom-till-medium {
+    &__heading {
+        font-size: 1.5rem;
+        
+        @mixin atMedium {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    &__padding-bottom-till-medium{
         padding-bottom: 0;
 
         @mixin atMedium {

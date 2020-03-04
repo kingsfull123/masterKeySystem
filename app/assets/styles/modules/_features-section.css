@@ -1,0 +1,31 @@
+.features-section {
+    position: relative;
+    padding-left: 0;
+    padding-bottom: 2.725rem;
+
+    @mixin atMedium {
+        padding-left: 95px;
+    }
+
+    &__icon {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+
+        @mixin atMedium {
+            position: absolute;
+            left: 0;
+            display: inline-block;
+        }
+    }
+
+    &__title {
+        margin-bottom: 1.125rem;
+        text-align: center;
+
+        @mixin atMedium {
+            text-align: left;
+        }
+    }
+
+}

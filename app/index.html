@@ -17,23 +17,25 @@
             <div class="site-header__btn">
                 <a href="#" class="site-header__btn btn btn--orange btn--large">find our more</a>
             </div>
-            <div class="site-header__block"></div>
-            <div class="site-header__listing">
-                <ul>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Products</a></li>
-                </ul>
-            </div>
+            <div class="site-header__block" id='block'></div>
+           
+                <div class="site-header__listing" id='listing'>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Products</a></li>
+                    </ul>
+                </div>
+      
         </div>
     </div>
 
-    <div class="large-hero">
+    <!-- <div class="large-hero">
         <picture>
             <source srcset='./assets/img/hero--large.jpg' media='(min-width: 1350px)'>
             <source srcset='./assets/img/hero--medium.jpg' media='(min-width: 990px)'>
             <source srcset='./assets/img/hero--small.jpg' media='(min-width: 640px)'>
-            <img src="./assets/img/hero--smaller.jpg" alt="img">
+            <img srcset="./assets/img/hero--smaller.jpg" alt="img" class='large-hero__image'>
         </picture>
         <div class="large-hero__container">
             <div class="wrapper">
@@ -43,93 +45,170 @@
                 <p><a href="" class="btn btn--orange">Find out more</a></p>
             </div>
         </div>
+    </div> -->
+
+    <div class="large-hero">
+        <picture>
+            <source srcset='./assets/img/hero--large.jpg 1920w, ./assets/img/hero--large-hi-dpi.jpg 3840w' media='(min-width: 1380px)'>
+            <source srcset='./assets/img/hero--medium.jpg 1380w, ./assets/img/hero--medium-hi-dpi.jpg 2760w' media='(min-width: 990px)'>
+            <source srcset='./assets/img/hero--small.jpg 990w, ./assets/img/hero--small-hi-dpi.jpg 1980w' media='(min-width: 640px)'>
+            <img srcset="./assets/img/hero--smaller.jpg 640w, ./assets/img/hero--smaller-hi-dpi.jpg 1280w" alt="coastal view"
+                class='large-hero__image'>
+        </picture>
+        <div class="large-hero__container">
+            <div class="wrapper">
+                <h1 class="large-hero__title">Your Clarity.</h1>
+                <h4 class="large-hero__subtitle">One trip way</h4>
+                <p class="large-hero__description">We create soul restoring journeys that inspire you to be you.</p>
+                <p><a href="#" class="btn btn--orange btn--large">Find out more</a></p>
+            </div>
+        </div>
     </div>
 
-    <div class='our-start head-section' id="our-beginning">
-        <div class="wrapper">
-            <div class="our-start__container our-start__padding-bottom-till-medium">
-                <h2 class='our-start__title our-start--center'>The first trip we planned was our own.</h2>
-                <h3 class='our-start__subtitle'>Ever since, we&rsquo;ve been working to make travel <strong> better for everyone.</strong></h3>
-                <img src="./assets/img/first-trip.jpg" alt="holding hands">
+    <div id="our-beginning" class='page-section'>
+        <div class='wrapper'>
+            <h2 class='headline headline--centered headline--b-margin-small'>The first trip we planned <strong>was our own.</strong></h2>
+            <h3 class='headline headline--centered headline--orange headline--small headline--narrow headline--b-margin-large'>Ever since, we&rsquo;ve
+                been working to make travel <strong>better for everyone.</strong></h3>
+            <div class="wrapper wrapper--medium wrapper--b-margin">
+                <img sizes="(min-width: 976px) 976px, 100vw" srcset="./assets/img/first-trip-low-res.jpg 565w, ./assets/img/first-trip.jpg 976w, ./assets/img/first-trip-hi-dpi.jpg 1952w" alt="holding hands">
             </div>
-            <div class="row row--gutters">
-                <div class="row__4">
+            <div class="row row__gutters">
+                <div class="row__medium-4 row__medium-4--larger row__b-margin-until-medium">
                     <picture>
-                        <source srcset='./assets/img/our-start-i.jpg' media='(min-width: 1010px)'>
-                        <source srcset='./assets/img/our-start-portrait-i.jpg' media='(min-width: 800px)'>
-                        <img src="./assets/img/our-start-landscape-i.jpg" alt="our start">
+                        <source sizes='404px' srcset='./assets/img/our-start.jpg 404w, ./assets/img/our-start-hi-dpi.jpg 808w' media='(min-width: 1200px)'>
+                        <source sizes='320px' srcset='./assets/img/our-start-portrait.jpg 382w, ./assets/img/our-start-portrait-hi-dpi.jpg 764w' media='(min-width: 800px)'>
+                        <img srcset="./assets/img/our-start-landscape.jpg 800w, ./assets/img/our-start-landscape-hi-dpi.jpg 1600w" alt="Jane Doe">
                     </picture>
                 </div>
-                <div class="row__8">
-                    <h2>Here&rsquo;s how we got started&hellip;</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, <a href="#">quis nostrud exercitation</a> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Duis aute irure dolor in <strong>reprehenderit in</strong> voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p>
+                <div class="row__medium-8 row__medium-8--smaller">
+                    <div class="generic-content-container">
+                        <h2 class='headline headline--no-t-margin'>Here&rsquo;s how we got started&hellip;</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad
+                            minim veniam, <a href="#">quis nostrud exercitation</a> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                            sunt in
+                            culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Duis aute irure dolor in <strong>reprehenderit in</strong> voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu
+                                fugiat.</strong></p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class='features head-section' id="features">
+    <div id="features" class='page-section page-section--blue'>
         <div class="wrapper">
-            <img src="./assets/img/icons/star.svg">
-            <h2>Our Features</h2>
-    
-            <img src="./assets/img/icons/rain.svg">
-            <h3>We&rsquo;ll Watch the Weather</h3>
-            <p>Download our app and we&rsquo;ll send you a notice if it&rsquo;s about to rain in the next 20 minutes around your current location. A good
-                rain can be refreshing, but sometimes you just want to stay dry.</p>
-    
-            <img src="./assets/img/icons/globe.svg">
-            <h3>Global Guides</h3>
-            <p>We&rsquo;ve scoured the entire planet for the best retreats and beautiful vistas. If there&rsquo;s a corner of the world you want to escape
-                to we know the most scenic and inspiring locations.</p>
-    
-            <img src="./assets/img/icons/wifi.svg">
-            <h3>Wi-Fi Waypoints</h3>
-            <p>We only send you on trips to places we can personally vouch for as being amazing. Which means we&rsquo;ve mapped out where local wi-fi
-                spots are and marked them in our app&rsquo;s map view.</p>
-    
-            <img src="./assets/img/icons/fire.svg">
-            <h3>Survival Kit</h3>
-            <p>Everytime you book an escape with us we send you a survival kit with the finest materials. The kit will allow you to setup a tent, start a
-                fire, scratch your own back and lower your taxes.</p>
+            <h2 class='section-title'><img class='section-title__icon' src="./assets/img/icons/star.svg">Our Features</h2>
+            <div class="row row__gutters--large generic-content-container">
+                <div class="row__medium-6">
+                    <div class='features-section'>
+                        <img class='features-section__icon' src="./assets/img/icons/rain.svg">
+                        <div>
+                            <h3 class='features-section__title'>We&rsquo;ll Watch the Weather</h3>
+                            <p>Download our app and we&rsquo;ll send you a notice if it&rsquo;s about to rain in the next 20 minutes around your current
+                                location.
+                                A
+                                good
+                                rain can be refreshing, but sometimes you just want to stay dry.</p>
+                        </div>
+                    </div>
+                    <div class='features-section'>
+                        <img class='features-section__icon' src="./assets/img/icons/globe.svg">
+                        <div>
+                            <h3 class='features-section__title'>Global Guides</h3>
+                            <p>We&rsquo;ve scoured the entire planet for the best retreats and beautiful vistas. If there&rsquo;s a corner of the world you
+                                want
+                                to
+                                escape
+                                to we know the most scenic and inspiring locations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row__medium-6">
+                    <div class='features-section'>
+                        <img class='features-section__icon' src="./assets/img/icons/wifi.svg">
+                        <div>
+                            <h3 class='features-section__title'>Wi-Fi Waypoints</h3>
+                            <p>We only send you on trips to places we can personally vouch for as being amazing. Which means we&rsquo;ve mapped out where
+                                local
+                                wi-fi
+                                spots are and marked them in our app&rsquo;s map view.</p>
+                        </div>
+                    </div>
+                    <div class='features-section'>
+                        <img class='features-section__icon' src="./assets/img/icons/fire.svg">
+                        <div>
+                            <h3 class='features-section__title'>Survival Kit</h3>
+                            <p>Everytime you book an escape with us we send you a survival kit with the finest materials. The kit will allow you to setup a
+                                tent,
+                                start a
+                                fire, scratch your own back and lower your taxes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div id="testimonials">
-        <img src="./assets/img/icons/comment.svg">
-        <h2>Real Testimonials</h2>
-
-        <img src="./assets/img/testimonial-jane.jpg">
-        <h3>Jane Doe</h3>
-        <h3>9 Time Escaper</h3>
-        <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
-
-        <img src="./assets/img/testimonial-john.jpg">
-        <h3>John Smith</h3>
-        <h3>4 Time Escaper</h3>
-        <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.&rdquo;</p>
-
-        <img src="./assets/img/testimonial-cat.jpg">
-        <h3>Cat McKitty</h3>
-        <h3>6 Time Escaper</h3>
-        <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit, sed do eiusmod tempor incididunt ut.&rdquo;</p>
+    <div id="testimonials" class='page-section page-section__testimonials'>
+        <div class="wrapper">
+        
+            <h2 class='section-title section-title--blue'><img class='section-title__icon' src="./assets/img/icons/comment.svg">Real Testimonials</h2>
+            
+            <div class="row generic-content-container row__gutters row--testimonials">
+                <div class="row__medium-4">
+                    <div class="testimonials__container">
+                        <img src="./assets/img/testimonial-jane.jpg" class='testimonials__image'>
+                        <div class="testimonials__text-container">
+                            <h2 class='testimonials__title'>Jane Doe</h2>
+                            <h3 class='testimonials__subtitle'>9 Time Escaper</h3>
+                            <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row__medium-4">
+                    <div class="testimonials__container">
+                        <img src="./assets/img/testimonial-john.jpg" class='testimonials__image'>
+                        <div class="testimonials__text-container">
+                            <h2 class='testimonials__title'>John Smith</h2>
+                            <h3 class='testimonials__subtitle'>4 Time Escaper</h3>
+                            <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.&rdquo;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row__medium-4">
+                    <div class="testimonials__container">
+                        <img src="./assets/img/testimonial-cat.jpg" class='testimonials__image'>
+                        <div class="testimonials__text-container">
+                            <h2 class='testimonials__title'>Cat McKitty</h2>
+                            <h3 class='testimonials__subtitle'>6 Time Escaper</h3>
+                            <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit, sed do eiusmod tempor incididunt ut.&rdquo;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <footer>
-        <p>Copyright &copy; 2019 Clear View Escapes. All rights reserved. <a href="#" class="btn btn--orange">Get in Touch</a></p>
+    <footer class='site-footer'>
+        <div class="wrapper">
+            <p><span class='site-footer__span'>Copyright &copy; 2019 Clear View Escapes. All rights reserved. </span><a href="#" class="btn btn--orange btn--large">Get in Touch</a></p>
+        </div>
     </footer>
 
     <script src='bundled.js'></script>
