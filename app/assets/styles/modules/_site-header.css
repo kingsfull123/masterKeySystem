@@ -1,5 +1,52 @@
 .site-header {
-    position: absolute;
-    z-index: 2;
-    background-color: rgba($mainBlue, .7);
+   position: absolute;
+   z-index: 2;
+   background-color: none;
+   width: 100%;
+   padding: 10px 0;
+
+   @mixin atMedium {
+       background-color: rgba($mainBlue, .3);
+   }
+
+   &__block {
+       width: 15px; 
+       height: 15px;
+       position: absolute;
+       right: 10px; 
+       top: 10px;
+       background-color: $mainOrange;
+       display: inline;
+
+       @mixin atMedium {
+           display: none;
+       }
+   }
+
+    &__logo {
+        background-color: $mainBlue;
+        position: absolute;
+        padding: 5px 10px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @mixin atMedium {
+            left: auto;
+            transform: translateX(0);
+        }
+    }
+
+   &__btn-container {
+       float: right;
+   }
+
+   &__menu-container {
+       display: none;
+
+       @mixin atMedium {
+           display: block;
+       }
+   }
+
 }
