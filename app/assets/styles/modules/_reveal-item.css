@@ -1,0 +1,7 @@
+.reveal-item {
+    opacity: 0;
+
+    &--is-revealed {
+        opacity: 1;
+    }
+}
